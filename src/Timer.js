@@ -9,6 +9,10 @@ export default class Timer extends Component {
         this.increment = this.increment.bind(this);
         setInterval(this.increment,1000);
     }
+    componentWillUnmount(){
+        console.log("unmounted")
+        delete this.increment;
+    }
     increment(){
 
         this.setState({
