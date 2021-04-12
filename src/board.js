@@ -24,7 +24,8 @@ class Board extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            sudoku:Sudokugenerator()
+            sudoku:Sudokugenerator(),
+            
         }
         this.onChange = this.onChange.bind(this);
         this.SolveSudoku = this.SolveSudoku.bind(this);
