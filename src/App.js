@@ -29,7 +29,7 @@ class App extends Component{
         this.state = {
             sudoku: Sudokugenerator(),
             showTimer:true,
-            startTime:d.getSeconds()
+            startTime:d.getTime()
         }
         this.onChange = this.onChange.bind(this);
         this.SolveSudoku = this.SolveSudoku.bind(this);

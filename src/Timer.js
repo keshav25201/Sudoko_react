@@ -22,7 +22,7 @@ export default class Timer extends Component {
     render() {
         return (
             <div>
-                TIME:{this.state.time}           
+                <h1>TIME:{this.state.time} </h1>          
             </div>
         )
     }

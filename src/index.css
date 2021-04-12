@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
 
 .app{
+    font-family: 'Roboto Mono', monospace;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #e4bad4;
 }
 .cell{
     width: 3rem;
@@ -12,11 +15,18 @@
     font-size: 30px;
     font-family: sans-serif;
     font-weight: 500;
+    color: grey;
+}
+input.cell:read-only{
+    color: black;
+
 }
 .heading{
     width: 100%;
     text-align: center;
     margin-bottom: 10px;
+    background-color: #31326f;
+    color: white;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
@@ -26,7 +36,13 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0; 
 }
 .btns{
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     margin-top: 20px;
+    justify-content: space-evenly;
+    width: 500px;
+}
+.btns >button{
+    font-size: 30px;
+    font-family: 'Roboto Mono', monospace;
 }
